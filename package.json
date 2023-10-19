@@ -1,7 +1,8 @@
 {
   "name": "leaflet.tilelayer.tilefetch",
+  "repository": "https://github.com/wantMorePayMore/Leaflet.TileLayer.TileFetch",
   "version": "1.0.0",
-  "description": "",
+  "description": "Customize the fetch function to retrieve tile data.",
   "main": "dist/Leaflet.TileLayer.TileFetch.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,9 +11,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "leaflet": "^1.9.4"
-  },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "rollup": "^4.1.4"
@@ -20,5 +18,8 @@
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1"
   }
 }

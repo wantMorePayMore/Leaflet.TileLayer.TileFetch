@@ -1,4 +1,4 @@
-
+import { v4 as uuidv4 } from 'uuid';
 L.TileLayer.TileFetch = L.TileLayer.extend({
   options: Object.assign(L.TileLayer.prototype.options, {
       // headers: {}
@@ -41,7 +41,7 @@ L.TileLayer.TileFetch = L.TileLayer.extend({
   */
         tile.setAttribute('role', 'presentation');
         
-        const fetchId = crypto.randomUUID()
+        const fetchId = uuidv4(); 
         tile.setAttribute('fetchId', fetchId);
         
         const tileUrl = this.getTileUrl(coords);

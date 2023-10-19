@@ -8,6 +8,7 @@ export default {
             name: 'L.TileLayer.TileFetch',
             // sourcemap: true,
             globals: {
+                "uuid": "uuid",
             },
         },
         {
@@ -15,6 +16,9 @@ export default {
             format: 'umd',
             name: 'L.TileLayer.TileFetch',
             plugins: [terser()],
+            globals: {
+                "uuid": "uuid",
+            },
         },
     ],
 };
